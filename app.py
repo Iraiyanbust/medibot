@@ -88,7 +88,7 @@ llm = ChatGroq(
     max_tokens=1024,
     timeout=None,
     max_retries=2,
-    api_key="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"
+    api_key=""
     # other params...
 )
 
@@ -129,4 +129,5 @@ if input_prompt:
         st.button('Reset All Chat 🗑️', on_click=reset_conversation)
 
     st.session_state.messages.append({"role": "ai", "content": result["answer"], "avatar": "attorney.svg"})
+
 
